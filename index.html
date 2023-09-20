@@ -17,11 +17,11 @@
         <div id="app">
 
             <div v-if="generatesEmail.length < 10"
-                class="d-flex justify-content-around m-5">
+                class="d-flex flex-wrap justify-content-center m-5">
                 <strong role="status">Caricamento
                     delle mail in
                     corso, attendere...</strong>
-                <div class="spinner-border  text-success"
+                <div class="spinner-grow d-flex p-1 text-success"
                     aria-hidden="true"></div>
             </div>
             <ol class="m-5" v-else>
