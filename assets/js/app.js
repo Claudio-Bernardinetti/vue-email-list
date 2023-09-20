@@ -7,7 +7,7 @@ createApp({
 
         return {
            
-            generatesEmail: [],
+            generatesEmail: []
 
         }
     },
@@ -19,10 +19,10 @@ createApp({
             .get('https://flynn.boolean.careers/exercises/api/random/mail')
             .then(response => {
                this.generatesEmail.push (response.data.response);
+
             })
             
         }
-
 
     }
 

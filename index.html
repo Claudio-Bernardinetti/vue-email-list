@@ -8,12 +8,11 @@
     <body>
 
         <div id="app">
-            <ul>
-                <li>
-                    {{generatesEmail}}
+            <ol>
+                <li v-for="email in generatesEmail" :key="email">
+                    {{ email }}
                 </li>
-
-            </ul>
+            </ol>
         </div>
 
         <!-- AJAX link -->
