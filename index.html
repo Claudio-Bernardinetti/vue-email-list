@@ -8,7 +8,7 @@
     <body>
 
         <div id="app">
-            <ol>
+            <ol v-if="success">
                 <li v-for="email in generatesEmail" :key="email">
                     {{ email }}
                 </li>
